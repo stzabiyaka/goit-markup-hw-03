@@ -15,13 +15,30 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  /* outline: 1px solid tomato; */
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* logo */
 .logo {
   color: var(--title-text-color);
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -33,6 +50,7 @@ body {
 
 .white {
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 .accent {
   color: var(--accent-color);
@@ -70,10 +88,6 @@ body {
 
   text-decoration: none;
 }
-.contacts-header:hover,
-.contacts-header:focus {
-  color: var(--accent-color);
-}
 .contacts-footer,
 .contacts-footer:visited {
   color: var(--white-semitransparent-color);
@@ -84,6 +98,8 @@ body {
 
   text-decoration: none;
 }
+.contacts-header:hover,
+.contacts-header:focus,
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--accent-color);
@@ -100,9 +116,14 @@ body {
 /* hero section */
 .hero {
   background-color: var(--dark-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--white-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -115,7 +136,12 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  border: none;
+  border: 1px transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  margin: 0 auto;
 
   font-family: inherit;
   font-weight: 700;
@@ -129,11 +155,17 @@ body {
 
 /* advantages section */
 
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .advantages-card {
   text-align: left;
 }
 .advantages-title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -141,12 +173,16 @@ body {
   text-transform: uppercase;
 }
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
 
 .section-title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -156,15 +192,26 @@ body {
 
 /* specialisation section */
 
+.specialisation {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 /* our team section */
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-card {
   background-color: var(--white-color);
+  padding-top: 0;
+  padding-bottom: 30px;
 }
 .team-member-title {
   color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -172,6 +219,8 @@ body {
   text-align: center;
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -183,7 +232,10 @@ body {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   cursor: pointer;
-  border: none;
+  border: 1px transparent;
+  border-radius: 4px;
+  min-height: 38px;
+  padding: 6px 22px;
 
   font-family: inherit;
   font-weight: 500;
@@ -199,15 +251,22 @@ body {
 }
 
 /* work examples section */
+.examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .examples-link,
 .examples-link:visited {
   text-decoration: none;
 }
 .examples-card {
   background-color: var(--white-color);
+  padding-bottom: 20px;
 }
 .examples-title {
   color: var(--title-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -215,6 +274,8 @@ body {
   letter-spacing: 0.06em;
 }
 .examples-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -227,4 +288,6 @@ body {
 /* page footer */
 .page-footer {
   background-color: var(--dark-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
