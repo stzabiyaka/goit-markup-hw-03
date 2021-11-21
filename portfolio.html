@@ -20,23 +20,27 @@
     <title>Портфолио</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
-        <nav>
+    <header class="page-header-border">
+      <div class="page-header container">
+        <nav class="site-nav">
           <a class="logo" href="./index.html" title="На главную" lang="en"
             ><span class="logo accent">Web</span>Studio</a
           >
-          <ul class="list">
-            <li><a class="site-nav-link" href="./index.html">Студия</a></li>
-            <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="site-nav-link" href="">Контакты</a></li>
+          <ul class="site-nav-links list">
+            <li class="item"><a class="site-nav-link" href="./index.html">Студия</a></li>
+            <li class="item">
+              <a class="site-nav-link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="site-nav-link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li>
-            <a class="contacts-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="contacts-header list">
+          <li class="item">
+            <a class="contacts-header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li><a class="contacts-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a class="contacts-header-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -44,18 +48,18 @@
     <main>
       <!-- work examples section-->
 
-      <section class="examples">
+      <section class="section">
         <div class="container">
           <!-- Filter Buttons -->
-          <ul class="list">
-            <li><button class="filter-button" type="button">Все</button></li>
-            <li><button class="filter-button" type="button">Веб-сайты</button></li>
-            <li><button class="filter-button" type="button">Приложения</button></li>
-            <li><button class="filter-button" type="button">Дизайн</button></li>
-            <li><button class="filter-button" type="button">Маркетинг</button></li>
+          <ul class="filter-buttons list">
+            <li class="item"><button class="filter-button" type="button">Все</button></li>
+            <li class="item"><button class="filter-button" type="button">Веб-сайты</button></li>
+            <li class="item"><button class="filter-button" type="button">Приложения</button></li>
+            <li class="item"><button class="filter-button" type="button">Дизайн</button></li>
+            <li class="item"><button class="filter-button" type="button">Маркетинг</button></li>
           </ul>
 
-          <ul class="list">
+          <ul class="examples-cards list">
             <li class="examples-card">
               <a class="examples-link" href="">
                 <img
@@ -64,8 +68,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Технокряк</h2>
-                <p class="examples-text">Веб-сайт</p>
+               <div class="examples-card-content">
+                  <h2 class="examples-title">Технокряк</h2>
+                  <p class="examples-text">Веб-сайт</p>
+               </div>
               </a>
             </li>
             <li class="examples-card">
@@ -76,8 +82,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Постер New Orlean vs Golden Star</h2>
-                <p class="examples-text">Дизайн</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="examples-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -88,8 +96,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Ресторан Seafood</h2>
-                <p class="examples-text">Приложение</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Ресторан Seafood</h2>
+                  <p class="examples-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -100,8 +110,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Проект Prime</h2>
-                <p class="examples-text">Маркетинг</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Проект Prime</h2>
+                  <p class="examples-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -112,8 +124,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Проект Boxes</h2>
-                <p class="examples-text">Приложение</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Проект Boxes</h2>
+                  <p class="examples-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -124,8 +138,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Inspiration has no Borders</h2>
-                <p class="examples-text">Веб-сайт</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Inspiration has no Borders</h2>
+                  <p class="examples-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -136,8 +152,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Издание Limited Edition</h2>
-                <p class="examples-text">Дизайн</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Издание Limited Edition</h2>
+                  <p class="examples-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -148,8 +166,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Проект LAB</h2>
-                <p class="examples-text">Маркетинг</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Проект LAB</h2>
+                  <p class="examples-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="examples-card">
@@ -160,8 +180,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="examples-title">Growing Business</h2>
-                <p class="examples-text">Приложение</p>
+                <div class="examples-card-content">
+                  <h2 class="examples-title">Growing Business</h2>
+                  <p class="examples-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -183,5 +205,4 @@
         </address>
       </div>
     </footer>
-  </body>
 </html>
